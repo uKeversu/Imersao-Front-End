@@ -4,8 +4,10 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Spotify - Imersão Alura</title>
-    <link rel="stylesheet" href="reset.css" />
-    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="src/styles/reset.css" />
+    <link rel="stylesheet" href="src/styles/vars.css" />
+    <link rel="stylesheet" href="src/styles/main-content.css">
+    <link rel="stylesheet" href="src/styles/sidebar-footer.css" />
 
     <link
       rel="stylesheet"
@@ -25,7 +27,10 @@
       <nav class="sidebar__navigation">
         <div class="logo">
           <a href="#">
-            <img src="assets/icons/logo-spotify.png" alt="Logo do Spotify" />
+            <img
+              src="./src/assets/icons/logo-spotify.png"
+              alt="Logo do Spotify"
+            />
           </a>
         </div>
         <ul>
@@ -71,5 +76,49 @@
         </div>
       </div>
     </div>
+    <main>
+      <div class="main-container">
+        <!-- INVERTER AS CLASSES -->
+        <nav class="header__navigation">
+          <div class="navigation">
+            <button class="arrow-left">
+              <img src="./src/assets/icons/small-left.png" alt="" />
+            </button>
+            <button class="arrow-right">
+              <img src="./src/assets/icons/small-right.png" alt="" />
+            </button>
+
+            <div class="header__search">
+              <img src="./src/assets/icons/search.png" alt="" />
+              <input
+                id="search-input"
+                maxlength="800"
+                autocorrect="off"
+                autocapitalize="off"
+                spellcheck="false"
+                placeholder="O que você quer ouvir?"
+                value=""
+              />
+            </div>
+          </div>
+
+          <div class="header__login">
+            <button class="subscribe">Inscreva-se</button>
+            <button class="login">Entrar</button>
+          </div>
+        </nav>
+    </main>
+    <footer class="disclaimer-premium">
+      <div class="text">
+        <p class="disclaimer-premium__title">Testar o Premium de graça</p>
+        <p class="disclaimer-premium__subtitle">
+          Inscreva-se para curtir música ilimitada e podcasts só com alguns
+          anúncios. Não precisa de cartão de crédito.
+        </p>
+      </div>
+      <div class="button">
+        <button type="button">Inscreva-se grátis</button>
+      </div>
+    </footer>
   </body>
 </html>
